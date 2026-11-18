@@ -1,0 +1,19 @@
+
+The task: 
+To redesign NNEADVOCATES website 
+
+Review the existing NNEADVOCATES website  https://www.nneadvocates.co.ke/ 
+
+Tailor the new http://localhost/nneadvocates/ design to match that of https://avvocato.vamtam.com/ (not 100% but in aspects that will be possible)
+
+The offline downloaded copy of NNEADVOCATES website is here - D:\wampserver\www\nneadvocates\local-nneadvocates - for local access of NNEADVOCATES website assets
+
+
+Other design instructions:
+Stack to be used - HTML, CSS, Javascript
+Border radius on controls and cards should be 4px
+Include sitemap.xml
+Contact/consultation form to be integrated with Web3Forms access key: f710b7ab-81f1-403f-a2d9-ca9c0f203c9c
+The menu & content of 'Insights' (avvocato.vamtam.com/insights/) should not be included in redesigned website
+
+
