@@ -28,7 +28,7 @@
 
 /* ---------- Tokens ---------- */
 :root {
-  --ink: #0f151f;
+  --ink: #383d47;   /* #0f151f; */
   --ink-deep: #041531;
   --ink-soft: #18212c;
   --brand: #3c3e95;
@@ -36,6 +36,10 @@
   --accent: #00b3ea;
   --accent-soft: #4cc7ef;
   --accent-light: #7ddcf9;
+  --gold: #c0a262;
+  --gold-soft: #d3bb85;
+  --gold-light: #ddc48e;
+  --gold-deep: #a4874a;
   --cream: #e8ecf5;
   --paper: #f6f8fc;
   --white: #ffffff;
@@ -204,6 +208,12 @@ hr {
 }
 .eyebrow--accent { color: var(--accent); }
 .hero .eyebrow--accent { color: var(--accent-light); }
+.eyebrow--gold { color: var(--gold); }
+.hero .eyebrow--gold,
+.page-hero .eyebrow--gold,
+.section--ink .eyebrow--gold,
+.consult-section .eyebrow--gold,
+.quote-band .eyebrow--gold { color: var(--gold-light); }
 .eyebrow--plain::before { display: none; }
 
 .lede {
@@ -276,6 +286,10 @@ hr {
 .btn--accent { background: var(--accent); border-color: var(--accent); color: var(--ink); }
 .btn--accent:hover { background: var(--accent-soft); border-color: var(--accent-soft); color: var(--ink); transform: translateY(-1px); }
 
+.btn--gold { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+.btn--gold:hover { background: var(--gold-soft); border-color: var(--gold-soft); color: var(--ink); transform: translateY(-1px); }
+.btn--gold:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+
 .btn--ink { background: var(--ink); border-color: var(--ink); color: var(--white); }
 .btn--ink:hover { background: var(--ink-deep); border-color: var(--ink-deep); color: var(--white); }
 
@@ -299,7 +313,7 @@ hr {
 .topbar {
   background: var(--ink-deep);
   color: rgba(255, 255, 255, 0.62);
-  font-size: 0.73rem;
+  font-size: 0.75rem;
   letter-spacing: 0.05em;
   transition: max-height 0.35s var(--ease), opacity 0.25s var(--ease);
   max-height: 44px;
@@ -381,7 +395,7 @@ hr {
   background: none;
   color: rgba(255, 255, 255, 0.82);
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.11em;
   line-height: 1.4;
