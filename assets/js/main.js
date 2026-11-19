@@ -6,9 +6,20 @@
 
   /* ---------- Header on scroll ---------- */
   var header = document.getElementById("site-header");
+  var headerScrolled = false;
   function onScroll() {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 24);
+    var y = window.scrollY;
+    // Hysteresis: enter the compact state below 24px but only leave it
+    // within 12px of the top, so small scroll jitter at the threshold
+    // cannot retrigger the header transition.
+    if (!headerScrolled && y > 24) {
+      headerScrolled = true;
+      header.classList.add("is-scrolled");
+    } else if (headerScrolled && y <= 12) {
+      headerScrolled = false;
+      header.classList.remove("is-scrolled");
+    }
   }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();

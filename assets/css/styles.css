@@ -67,6 +67,11 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* The header shrinks when it becomes sticky, which changes the document
+     height. Scroll anchoring would then compensate by moving the scroll
+     position back across the toggle threshold, making the header flicker
+     near the top of the page. */
+  overflow-anchor: none;
 }
 
 body {
